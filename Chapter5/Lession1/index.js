@@ -7,6 +7,7 @@ let a = [
     {name:"Trang",age:30},
 ]
 
-let b = a.filter((item) =>  item.age > 22).map((item) => item.name);
+let b = a.filter((item) =>  item.age > 25).map((item) => item.age);
+let c = b.reduce((pre,current,index) => (pre*index+current)/(index+1));
 
-console.log(b);
+console.log(c);
